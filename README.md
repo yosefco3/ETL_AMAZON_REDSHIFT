@@ -50,3 +50,10 @@ first we took the data from the source(amazon s3) and pot it almost as it is int
 then we moved all the data to our final tables which have build in a star schema. 
 the star schema is very simple to query and ideal for OLAP processes.
 (i think that we could improve the schema if we will add to the time table an "event_id" colunmn)
+
+## How to run the project:
+* you should create a cluster on amazon redshift, attach to it an appropriate Iam role and security group, make it avalable to outer communication, put the cluster end point on the configuration file(dwh.cfg)
+* put there the password and the db user too.
+* then you could run the etl.py file and see what query has run.
+
+
