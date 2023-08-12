@@ -40,9 +40,8 @@ Using the song and event datasets, I created a star schema optimized for queries
     
 ## The project template:
 
-* create_table.py is where I created the fact and dimension tables for the star schema in Redshift.
-* etl.py is where I loadED data from S3 into staging tables on Redshift and then process that data into your analytics tables on Redshift.
-* sql_queries.py is where I defined the SQL statements, which will be imported into the two other files above.
+* in sql_queries.py there are the queries to create the tables and insert the data.
+* etl.py is where I have the functions to load the data from S3 into staging tables on Redshift and then process that data into the analytics tables on Redshif, all with the queries in sql_queries.py. 
 * README.md is this file.
 
 ## Some words about the schema:
